@@ -1,2 +1,2 @@
 # Shell
-自己写的一些常用shell
+一些常用的shell
