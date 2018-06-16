@@ -42,7 +42,7 @@ if [ "$1" != "" ]; then
     echo "git clone username@$GIT_HOST:$GIT_REPO_PATH"
 else
     echo "Usage:"
-    echo "  create-repo.sh Name-Of-Repo Path-Of-Deploy"
+    echo "  create-repo.sh Path-Of-Repo Path-Of-Deploy"
 fi
 
 if [ "$2" != "" ]; then
