@@ -50,6 +50,9 @@ if [ "$2" != "" ]; then
     GIT_DEPLOY_DIR=${GIT_DEPLOY_PATH%/*}
     mkdir -p $GIT_DEPLOY_DIR
     git clone $GIT_REPO_PATH $GIT_DEPLOY_PATH
+    cd $GIT_DEPLOY_PATH
+    touch README.md
+    git add . && git commit -m "add README.md" && git push --set-upstream origin master
     cd "$GIT_REPO_PATH/hooks"
     GitDeplyHookScript $GIT_DEPLOY_PATH
     echo "Deploy Path: $GIT_DEPLOY_PATH"
