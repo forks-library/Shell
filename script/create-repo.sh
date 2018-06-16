@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#Author: PersiLiao
+#Author: PersiLiao(xiangchu.liao@gmail.com)
 #Description: Git创建仓库并设置自动部署脚本
 #Version: 1.0
 #yum install -y git
