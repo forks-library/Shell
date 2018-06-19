@@ -71,6 +71,7 @@ function GitAddGitignore()
     echo 'cmake-build-debug' >> .gitignore 
     echo '.cproject' >> .gitignore
     echo '.project' >> .gitignore
+    echo '.settings' >> .gitignore
 }
 
 function GitAddReadme()
