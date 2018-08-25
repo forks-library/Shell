@@ -5,7 +5,7 @@
 #Version: 1.0
 
 # (版本号 版本安装路径)
-PHP_VERSION_PATH=("71" "/usr/local/php7.1.16" "72" "/usr/local/php7.2" "dev" "/Users/persi/Documents/Github/PHP/php-src")
+PHP_VERSION_PATH=("56" "/usr/local/php5.6" "70" "/usr/local/php7.0" "71" "/usr/local/php7.1" "72" "/usr/local/php7.2")
 
 function CheckFile()
 {
@@ -46,6 +46,12 @@ if [ ! ${PHP_VERSION} ]; then
     echo "Please enter the PHP version you need to switch .\\n"
     echo "Usage:"
     echo "  php-version.sh version_number, example: php-version.sh dev ."
+    echo "  list of supported php versions: "
+    for PHP_PATH in "${!PHP_VERSION_PATH[@]}"; do
+        if [ `expr $PHP_PATH % 2` = 0 ]; then
+            echo "    "${PHP_VERSION_PATH[$PHP_PATH]}
+        fi
+    done
     exit 1
 fi
 
