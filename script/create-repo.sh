@@ -33,7 +33,6 @@ function GitDeplyHookScript()
     echo 'echo "==============================================="' >> post-receive
     echo 'cd $DeployPath' >> post-receive
     echo 'git pull origin master' >> post-receive
-    echo 'git reset --hard origin/master' >> post-receive
     echo '' >> post-receive
     echo 'time=`date`' >> post-receive
     echo 'echo "web server pull at webserver at time: $time."' >> post-receive
