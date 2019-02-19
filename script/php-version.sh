@@ -5,7 +5,7 @@
 #Version: 1.0
 
 # (版本号 版本安装路径)
-PHP_VERSION_PATH=("54" "/usr/local/php5.4" "56" "/usr/local/php5.6" "70" "/usr/local/php7.0" "71" "/usr/local/php7.1" "72" "/usr/local/php7.2")
+PHP_VERSION_PATH=("54" "/usr/local/php5.4" "56" "/usr/local/php5.6" "70" "/usr/local/php7.0" "71" "/usr/local/php7.1" "72" "/usr/local/php7.2" "dev" "/usr/local/phpdev")
 
 function CheckFile()
 {
